@@ -1,28 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Variables } from './Components/variables';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import contents from './contents.json'
+import { Intro } from './Components/intro';
+import { NumbersAndExpressions } from './Components/numbersAndExpresions';
+import { Strings } from './Components/strings';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+
+export default class App extends Component{
+
+displayLinks(){
+  return contents.map((e, i) => <Link key={i} to={`/${e.content.replace(/\s/g, "")}`}>{`${e.content}`}</Link>
+  )
 }
 
-export default App;
+
+ render(){
+    return (
+
+      <Router>
+        <div>
+          <div>
+            {this.displayLinks()}
+          </div>
+          <div>
+            <Switch>
+              <Route exact path={`/`} component={Intro} />
+              <Route path={`/Introduction`} component={Intro} />
+              <Route path={`/Variables`} component={Variables} />
+              <Route path={`/NumbersExpressionsandEvaluations`} component={NumbersAndExpressions} />
+              <Route path={`/Strings`} component={Strings} />
+            </Switch>
+          </div>
+        </div>
+      </Router>
+    
+    );
+    }
+}
+
+
