@@ -6,12 +6,13 @@ import contents from './contents.json'
 import { Intro } from './Components/intro';
 import { NumbersAndExpressions } from './Components/numbersAndExpresions';
 import { Strings } from './Components/strings';
+import { Booleans } from './Components/boolean';
 
 
 export default class App extends Component{
 
 displayLinks(){
-  return contents.map((e, i) => <Link key={i} to={`/${e.content.replace(/\s/g, "")}`}>{`${e.content}`}</Link>
+  return contents.map((e, i) => <li><Link key={i} to={`/${e.content.replace(/\s/g, "")}`}>{`${e.content}`}</Link></li>
   )
 }
 
@@ -31,6 +32,7 @@ displayLinks(){
               <Route path={`/Variables`} component={Variables} />
               <Route path={`/NumbersExpressionsandEvaluations`} component={NumbersAndExpressions} />
               <Route path={`/Strings`} component={Strings} />
+              <Route path={`/BooleansandConditionalStatements`} component={Booleans} />
             </Switch>
           </div>
         </div>
