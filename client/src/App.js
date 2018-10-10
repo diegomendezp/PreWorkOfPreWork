@@ -9,6 +9,7 @@ import { Strings } from './Components/strings';
 import { Booleans } from './Components/boolean';
 import { arrays } from './Components/arrays';
 import { loops } from "./Components/loops";
+import { objects } from "./Components/objects";
 
 
 export default class App extends Component{
@@ -37,6 +38,7 @@ displayLinks(){
               <Route path={`/BooleansandConditionalStatements`} component={Booleans} />
               <Route path={`/arrays`} component={arrays} />
               <Route path={`/loops`} component={loops} />
+              <Route path={`/objects`} component={objects} />
             </Switch>
           </div>
         </div>
