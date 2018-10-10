@@ -7,6 +7,7 @@ import { Intro } from './Components/intro';
 import { NumbersAndExpressions } from './Components/numbersAndExpresions';
 import { Strings } from './Components/strings';
 import { Booleans } from './Components/boolean';
+import { arrays } from './Components/arrays';
 
 
 export default class App extends Component{
@@ -33,6 +34,7 @@ displayLinks(){
               <Route path={`/NumbersExpressionsandEvaluations`} component={NumbersAndExpressions} />
               <Route path={`/Strings`} component={Strings} />
               <Route path={`/BooleansandConditionalStatements`} component={Booleans} />
+              <Route path={`/arrays`} component={arrays} />
             </Switch>
           </div>
         </div>
