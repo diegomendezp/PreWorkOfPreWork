@@ -27,7 +27,15 @@
   padding-top: 5%;
 }
 
-li {
-  padding-left: 5%;
-  list-style: none;
+@media (min-width: 900px) {
+  li {
+    padding-left: 5%;
+    list-style: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .list {
+    display: none;
+  }
 }
