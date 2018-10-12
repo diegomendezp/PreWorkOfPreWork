@@ -25,7 +25,7 @@ displayLinks(){
 
       <Router>
         <div>
-          <div>
+          <div  className="list">
             {this.displayLinks()}
           </div>
           <div>
