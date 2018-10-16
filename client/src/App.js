@@ -10,9 +10,15 @@ import { Booleans } from './Components/boolean';
 import { arrays } from './Components/arrays';
 import { loops } from "./Components/loops";
 import { objects } from "./Components/objects";
+import { elastic as Menu } from 'react-burger-menu'
+
 
 
 export default class App extends Component{
+
+  showSettings (event) {
+    event.preventDefault();
+  }
 
 displayLinks(){
   return contents.map((e, i) => <li><Link key={i} to={`/${e.content.replace(/\s/g, "")}`}>{`${e.content}`}</Link></li>
@@ -24,23 +30,30 @@ displayLinks(){
     return (
 
       <Router>
-        <div>
-          <div  className="list">
+
+        <div id="outer-container">
+          <Menu right isOpen={ false } customBurgerIcon={ <img src="./img/if_menu-alt_134216.png" /> } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
             {this.displayLinks()}
+          </Menu>
+          <div id="page-wrap">
+            <div  className="list">
+              {this.displayLinks()}
+            </div>
+            <div>
+              <Switch>
+                <Route exact path={`/`} component={Intro} />
+                <Route path={`/Introduction`} component={Intro} />
+                <Route path={`/Variables`} component={Variables} />
+                <Route path={`/NumbersExpressionsandEvaluations`} component={NumbersAndExpressions} />
+                <Route path={`/Strings`} component={Strings} />
+                <Route path={`/BooleansandConditionalStatements`} component={Booleans} />
+                <Route path={`/arrays`} component={arrays} />
+                <Route path={`/loops`} component={loops} />
+                <Route path={`/objects`} component={objects} />
+              </Switch>
+            </div>
           </div>
-          <div>
-            <Switch>
-              <Route exact path={`/`} component={Intro} />
-              <Route path={`/Introduction`} component={Intro} />
-              <Route path={`/Variables`} component={Variables} />
-              <Route path={`/NumbersExpressionsandEvaluations`} component={NumbersAndExpressions} />
-              <Route path={`/Strings`} component={Strings} />
-              <Route path={`/BooleansandConditionalStatements`} component={Booleans} />
-              <Route path={`/arrays`} component={arrays} />
-              <Route path={`/loops`} component={loops} />
-              <Route path={`/objects`} component={objects} />
-            </Switch>
-          </div>
+          
         </div>
       </Router>
     
