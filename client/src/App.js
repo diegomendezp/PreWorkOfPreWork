@@ -10,7 +10,9 @@ import { Booleans } from "./Components/boolean";
 import { arrays } from "./Components/arrays";
 import { loops } from "./Components/loops";
 import { objects } from "./Components/objects";
+
 import { elastic as Menu } from "react-burger-menu";
+import { areYouReady } from "./Components/areYouReady";
 
 export default class App extends Component {
   showSettings(event) {
@@ -68,6 +70,7 @@ export default class App extends Component {
                 <Route path={`/arrays`} component={arrays} />
                 <Route path={`/loops`} component={loops} />
                 <Route path={`/objects`} component={objects} />
+                <Route path={`/areyouready`} component={areYouReady} />
               </Switch>
             </div>
           </div>
