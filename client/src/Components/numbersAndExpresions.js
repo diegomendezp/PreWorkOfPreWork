@@ -3,7 +3,7 @@ import React from 'react'
 export const NumbersAndExpressions = () => {
   return(
     <div>
-    <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><p><img src="https://i.imgur.com/1QgrNNw.png" alt="Ironhack Logo" /></p><h1 id="Numbers-Expressions-and-Evaluations"><a className="anchor hidden-xs" href="#Numbers-Expressions-and-Evaluations" title="Numbers-Expressions-and-Evaluations"><span className="octicon octicon-link" /></a>Numbers, Expressions, and Evaluations</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
+    <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><h1 id="Numbers-Expressions-and-Evaluations"><a className="anchor hidden-xs" href="#Numbers-Expressions-and-Evaluations" title="Numbers-Expressions-and-Evaluations"><span className="octicon octicon-link" /></a>Numbers, Expressions, and Evaluations</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
         <li>Use a variety of different operators in JavaScript.</li>
         <li>Understand what an <code>expression</code> is.</li>
         <li>Understand <code>operator precendence</code>, and the order in which your code executes.</li>

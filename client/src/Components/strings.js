@@ -3,7 +3,7 @@ import React from 'react'
 export const Strings = () => {
   return (
     <div>
-        <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><p><img src="https://i.imgur.com/1QgrNNw.png" alt="Ironhack Logo" /></p><h1 id="Basic-Data-Types-Strings"><a className="anchor hidden-xs" href="#Basic-Data-Types-Strings" title="Basic-Data-Types-Strings"><span className="octicon octicon-link" /></a>Basic Data Types: Strings</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
+        <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><h1 id="Basic-Data-Types-Strings"><a className="anchor hidden-xs" href="#Basic-Data-Types-Strings" title="Basic-Data-Types-Strings"><span className="octicon octicon-link" /></a>Basic Data Types: Strings</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
             <li>Explain what a string is in JavaScript.</li>
             <li>Create a string.</li>
             <li>Use some extra string tips &amp; tricks.</li>

@@ -21,19 +21,23 @@ export default class App extends Component {
 
   scrollUp() {
     window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-      });
+      top: 0,
+      behavior: "smooth"
+    });
   }
 
   displayLinks() {
     return contents.map((e, i) => (
       <li>
         <Link
+          className={"App-link"}
+          style={{ textDecoration: "none" }}
           onClick={() => this.scrollUp()}
           key={i}
           to={`/${e.content.replace(/\s/g, "")}`}
-        >{`${e.content}`}</Link>
+        >
+          <div class="link-item">{`${e.content}`}</div>
+        </Link>
       </li>
     ));
   }
@@ -44,15 +48,31 @@ export default class App extends Component {
         <div id="outer-container">
           <Menu
             right
-            isOpen={false}
+            isOpen={document.documentElement.clientWidth >= 1301 ? false :false}
             customBurgerIcon={<img src="./img/if_menu-alt_134216.png" />}
             pageWrapId={"page-wrap"}
             outerContainerId={"outer-container"}
           >
+            <div className="listImage">
+              <img
+              className={"responsive-menu-image"}
+                src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4017/s300/logo-ironhack-blue.png"
+                alt=""
+              />
+             </div>
             {this.displayLinks()}
           </Menu>
           <div id="page-wrap">
-            <div className="list">{this.displayLinks()}</div>
+            <div className="list">
+              <div className="listImage">
+                <img
+                className={"menu-image"}
+                  src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/4017/s300/logo-ironhack-blue.png"
+                  alt=""
+                />
+              </div>
+              {this.displayLinks()}
+            </div>
             <div>
               <Switch>
                 <Route exact path={`/`} component={Intro} />

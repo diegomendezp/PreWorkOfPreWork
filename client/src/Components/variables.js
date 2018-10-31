@@ -3,7 +3,7 @@ import React from 'react';
 export const Variables = () => {
   return (
     <div>
-    <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><p><img src="https://i.imgur.com/1QgrNNw.png" alt="Ironhack Logo" /></p><h1 id="Variables"><a className="anchor hidden-xs" href="#Variables" title="Variables"><span className="octicon octicon-link" /></a>Variables</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
+    <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><h1 id="Variables"><a className="anchor hidden-xs" href="#Variables" title="Variables"><span className="octicon octicon-link" /></a>Variables</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
             <li>Explain what a variable is.</li>
             <li>Understand what “dynamically typed” means.</li>
             <li>Declare variables in JavaScript.</li>

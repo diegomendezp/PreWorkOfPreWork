@@ -3,7 +3,7 @@ import React from 'react';
 export const objects = () => {
       return (
         <div>
-          <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><p><img src="https://i.imgur.com/1QgrNNw.png" alt="Ironhack Logo" /></p><h1 id="Basic-Data-Types-Object"><a className="anchor hidden-xs" href="#Basic-Data-Types-Object" title="Basic-Data-Types-Object"><span className="octicon octicon-link" /></a>Basic Data Types: Object</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
+          <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><h1 id="Basic-Data-Types-Object"><a className="anchor hidden-xs" href="#Basic-Data-Types-Object" title="Basic-Data-Types-Object"><span className="octicon octicon-link" /></a>Basic Data Types: Object</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>
               <li>Understand <code>Objects</code> as a collection.</li>
               <li>Explain key-value relationships.</li>
               <li>Use <code>Object</code> in JavaScript and understand its importance.</li>

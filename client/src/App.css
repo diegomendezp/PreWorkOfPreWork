@@ -19,27 +19,76 @@
 }
 
 .App-link {
-  color: #61dafb;
+  /* color: #61dafb; */
+  color: white;
+  text-decoration: none;
 }
 
 .list {
   position: fixed;
   padding-top: 3%;
+  height: 100%;
+  background: #373a47;
+  width: 20%;
 }
 
-@media (min-width: 900px) {
+
+.listImage{
+  
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 5% auto;
+  text-align: center;
+}
+
+.menu-image{
+  width: 50%;
+  height: 50%;
+}
+
+.responsive-menu-image {
+  width: 50%;
+  height: 50%;
+}
+
+.link-item{
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+}
+
+.link-item:focus-within {
+  background-color: white;
+  text-decoration: none;
+  text-emphasis: none;
+} 
+
+@media (min-width: 1301px) {
   li {
     padding-left: 5%;
     list-style: none;
   }
 
+  .bm-menu {
+    display: none;
+  }
+  .bm-overlay {
+    display: none;
+  }
+  .bm-menu-wrap {
+    display: none;
+  }
   .bm-burger-button {
     display: none;
+  }
+
+  #page-wrap {
+    transform: translate3d(0px, 0px, 0px) !important;   
   }
   
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   .list {
     display: none;
   }
