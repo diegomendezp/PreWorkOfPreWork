@@ -34,7 +34,7 @@ export default class App extends Component {
           style={{ textDecoration: "none" }}
           onClick={() => this.scrollUp()}
           key={i}
-          to={`/${e.content.replace(/\s/g, "")}`}
+          to={`/PreWorkOfPreWork/${e.content.replace(/\s/g, "")}`}
         >
           <div class="link-item">{`${e.content}`}</div>
         </Link>
@@ -75,22 +75,22 @@ export default class App extends Component {
             </div>
             <div>
               <Switch>
-                <Route exact path={`/`} component={Intro} />
-                <Route path={`/Introduction`} component={Intro} />
-                <Route path={`/Variables`} component={Variables} />
+                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Intro} />
+                <Route path={`${process.env.PUBLIC_URL}/Introduction`} component={Intro} />
+                <Route path={`${process.env.PUBLIC_URL}/Variables`} component={Variables} />
                 <Route
-                  path={`/NumbersExpressionsandEvaluations`}
+                  path={`${process.env.PUBLIC_URL}/NumbersExpressionsandEvaluations`}
                   component={NumbersAndExpressions}
                 />
-                <Route path={`/Strings`} component={Strings} />
+                <Route path={`${process.env.PUBLIC_URL}/Strings`} component={Strings} />
                 <Route
-                  path={`/BooleansandConditionalStatements`}
+                  path={`${process.env.PUBLIC_URL}/BooleansandConditionalStatements`}
                   component={Booleans}
                 />
-                <Route path={`/arrays`} component={arrays} />
-                <Route path={`/loops`} component={loops} />
-                <Route path={`/objects`} component={objects} />
-                <Route path={`/areyouready`} component={areYouReady} />
+                <Route path={`${process.env.PUBLIC_URL}/arrays`} component={arrays} />
+                <Route path={`${process.env.PUBLIC_URL}/loops`} component={loops} />
+                <Route path={`${process.env.PUBLIC_URL}/objects`} component={objects} />
+                <Route path={`${process.env.PUBLIC_URL}/areyouready`} component={areYouReady} />
               </Switch>
             </div>
           </div>
