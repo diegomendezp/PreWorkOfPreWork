@@ -55,13 +55,10 @@
   width: 100%;
   height: 50px;
   text-decoration: none;
+  display: flex;
+  justify-items: center;
 }
 
-.link-item:focus-within {
-  background-color: white;
-  text-decoration: none;
-  text-emphasis: none;
-} 
 
 @media (min-width: 1301px) {
   li {
@@ -93,6 +90,7 @@
     display: none;
   }
 
+
   .bm-burger-button {
     position: fixed;
     width: 36px;
@@ -122,6 +120,7 @@
     background: #373a47;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
+    white-space: normal !important;
   }
   
   /* Morph shape necessary with bubble or elastic */
@@ -133,6 +132,7 @@
   .bm-item-list {
     color: #b8b7ad;
     padding: 0.8em;
+    /* left:0px !important; */
   }
   
   /* Individual item */

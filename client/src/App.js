@@ -14,6 +14,7 @@ import { objects } from "./Components/objects";
 import { elastic as Menu } from "react-burger-menu";
 import { areYouReady } from "./Components/areYouReady";
 
+
 export default class App extends Component {
   showSettings(event) {
     event.preventDefault();
