@@ -83,7 +83,7 @@
   }
 
   #page-wrap {
-    transform: translate3d(0px, 0px, 0px) !important;   
+    transform: none !important;   
   }
   
 }
