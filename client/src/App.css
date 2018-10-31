@@ -56,7 +56,7 @@
   height: 50px;
   text-decoration: none;
   display: flex;
-  justify-items: center;
+  align-items: center;
 }
 
 
