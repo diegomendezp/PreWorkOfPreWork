@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Variables } from "./Components/variables";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import contents from "./contents.json";
 import { Intro } from "./Components/intro";
 import { NumbersAndExpressions } from "./Components/numbersAndExpresions";
@@ -75,7 +75,7 @@ export default class App extends Component {
             </div>
             <div>
               <Switch>
-                <Route exact path={`${process.env.PUBLIC_URL}/`} component={Intro} />
+                <Route exact path={`/`} component={Intro} />
                 <Route path={`${process.env.PUBLIC_URL}/Introduction`} component={Intro} />
                 <Route path={`${process.env.PUBLIC_URL}/Variables`} component={Variables} />
                 <Route
@@ -87,10 +87,10 @@ export default class App extends Component {
                   path={`${process.env.PUBLIC_URL}/BooleansandConditionalStatements`}
                   component={Booleans}
                 />
-                <Route path={`${process.env.PUBLIC_URL}/arrays`} component={arrays} />
-                <Route path={`${process.env.PUBLIC_URL}/loops`} component={loops} />
-                <Route path={`${process.env.PUBLIC_URL}/objects`} component={objects} />
-                <Route path={`${process.env.PUBLIC_URL}/areyouready`} component={areYouReady} />
+                <Route path={`${process.env.PUBLIC_URL}/Arrays`} component={arrays} />
+                <Route path={`${process.env.PUBLIC_URL}/Loops`} component={loops} />
+                <Route path={`${process.env.PUBLIC_URL}/Objects`} component={objects} />
+                <Route path={`${process.env.PUBLIC_URL}/AreYouReady`} component={areYouReady} />
               </Switch>
             </div>
           </div>
